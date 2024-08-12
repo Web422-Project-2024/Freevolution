@@ -1,0 +1,252 @@
+/* Home.module.css */
+
+.container {
+  width: 100%;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax value as needed */
+  grid-template-rows: auto auto; /* Add a second row for pagination */
+  gap: 24px;
+}
+
+.gameCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.gameImage {
+  width: 205px;
+  height: 120px;
+  border-radius: 16px;
+}
+
+.gameInfo{
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  gap: 4px;
+}
+
+.gameTitle {
+  margin-top: 8px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.10px;
+  word-wrap: break-word;
+}
+
+.gameDescription {
+  margin-bottom: 6px;
+  color: #D8D8D8;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.40px;
+  word-wrap: break-word;
+}
+
+.gameTags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 16px;
+  background: #DCDCDC;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tagText {
+  text-align: center;
+  color: black;
+  font-size: 9px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.10px;
+  word-wrap: break-word;
+}
+
+/**/
+.layout {
+  width: 100%;
+  /* padding-bottom: 24px; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  /* display: inline-flex; */
+
+  display: flex;
+  flex-direction: row; /* Arrange sidebar and main content horizontally */
+  /* min-height: 100vh; */
+  /* max-width: 80vw; */
+  
+}
+
+.header {
+  /* align-self: stretch;
+  height: 56px;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: inline-flex; */
+
+  
+  /* display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 56px;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px; */
+
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  height: 56px;
+  background-color: #1F2030;  */
+
+  display: grid;
+  background-color: #1F2030; 
+  align-items: center; 
+  height: 56px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* added */
+.leftSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.centerSection {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.rightSection {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightSection > * {
+  margin-left: 12px; /* Space between search bar and other items */
+}
+
+/*  end added */
+.logoContainer {
+  width: 199px;
+  height: 48px;
+}
+
+.branding {
+  /* width: 203px;
+  height: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex; */
+  display: flex; /* Flexbox for branding content */
+  align-items: center; 
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-right: 8px; 
+}
+
+.brandName {
+  width: 136px;
+  height: 20px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  word-wrap: break-word;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the container */
+  /* padding: 16px; */
+  background-color: #1F2030; /* Background color for the sidebar */
+  width: 100px; /* Width of the sidebar */
+  height: 100vh;
+}
+
+.categories {
+  /* border-radius: 8px; */
+  /* border: 1px solid var(--Schemes-Outline, #79747E); */
+  border: none;
+  /* display: flex-inline; */
+  display: block;
+  margin: 5px 5px;
+
+  /* height: 32px; */
+  padding: 6px 16px;
+  /* margin-right: 10px;  */
+  align-self: center; 
+  padding: 6px 0;
+  background-color: Transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.categories span {
+  margin-top: 5px;
+}
+
+.categories:hover {
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+}
+
+.paginationContainer {
+  grid-row: 2;
+  justify-content: center;
+  padding-top: 16px;
+}
