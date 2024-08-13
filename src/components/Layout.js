@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import Head from "next/head";
 import Search from "./Search";
 import Image from 'next/image';
-import styles from '../styles/home.module.css';
+import styles from '@/styles/Home.module.css';
 
 export default function Layout({ children }) {
   return (
